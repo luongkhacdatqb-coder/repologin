@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/News.css">
+    <title>WorldNews</title>
+</head>
+<body>
+
+    
+    <div class="header">
+        <div class="logo">WorldNews</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Cooking</a></li>
+                <li><a href="#">Health</a></li>
+                <li><a href="#">Entertainment</a></li>
+                <li><a href="#">Travel</a></li>
+                <li><a href="#">Education</a></li>
+            </ul>
+        </nav>
+    </div>
+
+   
+    <section class="breaking-hero">
+
+        <div class="carousel-wrapper">
+
+            <button class="carousel-btn prev" id="prevBtn" aria-label="Previous article">&#8592;</button>
+
+            <div class="breaking-card">
+
+                <div class="slide-counter" id="slideCounter">1 / 5</div>
+
+                <div class="slides-track" id="slidesTrack">
+
+                    
+                    <div class="slide" onclick="openArticle(0)">
+                        <div class="breaking-img">
+                            <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=900&q=80" alt="Breaking news" onerror="this.style.display='none'">
+                            <div class="breaking-img-icon">🌐</div>
+                            <div class="breaking-tag">⚡ Breaking News</div>
+                            <div class="breaking-overlay">
+                                <div class="breaking-overlay-label">Breaking News</div>
+                                <div class="breaking-overlay-title">Lorem ipsum dolor sit amet consectetur adipisicing elit nesciunt autem totam</div>
+                                <div class="breaking-overlay-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus fuga error hic sapiente soluta eveniet expedita earum recusandae quis nobis delectus harum voluptatibus vitae sapiente aspernatur.</div>
+                            </div>
+                        </div>
+                        <div class="breaking-bottom">
+                            <div class="breaking-bottom-left">
+                                <span class="breaking-category">Lorem · Ipsum</span>
+                                <div class="breaking-bottom-title">Lorem ipsum dolor sit amet consectetur adipisicing elit rerum laborum necessitatibus consequuntur</div>
+                            </div>
+                            <div class="breaking-meta">2 min ago</div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="slide" onclick="openArticle(1)">
+                        <div class="breaking-img">
+                            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=900&q=80" alt="Breaking news" onerror="this.style.display='none'">
+                            <div class="breaking-img-icon">📈</div>
+                            <div class="breaking-tag">⚡ Breaking News</div>
+                            <div class="breaking-overlay">
+                                <div class="breaking-overlay-label">Breaking News</div>
+                                <div class="breaking-overlay-title">Nesciunt autem totam voluptate beatae iure exercitationem doloremque eaque rerum</div>
+                                <div class="breaking-overlay-desc">Harum voluptatibus vitae sapiente aspernatur obcaecati deserunt fugit enim possimus adipisci eaque doloribus blanditiis aut recusandae quis nobis delectus expedita earum.</div>
+                            </div>
+                        </div>
+                        <div class="breaking-bottom">
+                            <div class="breaking-bottom-left">
+                                <span class="breaking-category">Dolor · Amet</span>
+                                <div class="breaking-bottom-title">Nesciunt autem totam voluptate beatae iure exercitationem doloremque eaque rerum maiores</div>
+                            </div>
+                            <div class="breaking-meta">18 min ago</div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="slide" onclick="openArticle(2)">
+                        <div class="breaking-img">
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80" alt="Breaking news" onerror="this.style.display='none'">
+                            <div class="breaking-img-icon">🚀</div>
+                            <div class="breaking-tag">⚡ Breaking News</div>
+                            <div class="breaking-overlay">
+                                <div class="breaking-overlay-label">Breaking News</div>
+                                <div class="breaking-overlay-title">Aspernatur molestias quae aperiam facere quos mollitia dignissimos eum ducimus</div>
+                                <div class="breaking-overlay-desc">Earum recusandae quis nobis delectus harum voluptatibus vitae sapiente aspernatur obcaecati deserunt fugit enim possimus adipisci eaque doloribus blanditiis.</div>
+                            </div>
+                        </div>
+                        <div class="breaking-bottom">
+                            <div class="breaking-bottom-left">
+                                <span class="breaking-category">Consectetur · Elit</span>
+                                <div class="breaking-bottom-title">Aspernatur molestias quae aperiam facere quos mollitia dignissimos eum ducimus ipsam</div>
+                            </div>
+                            <div class="breaking-meta">45 min ago</div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="slide" onclick="openArticle(3)">
+                        <div class="breaking-img">
+                            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=900&q=80" alt="Breaking news" onerror="this.style.display='none'">
+                            <div class="breaking-img-icon">🏥</div>
+                            <div class="breaking-tag">⚡ Breaking News</div>
+                            <div class="breaking-overlay">
+                                <div class="breaking-overlay-label">Breaking News</div>
+                                <div class="breaking-overlay-title">Possimus adipisci eaque doloribus blanditiis aut reiciendis totam nemo quos mollitia</div>
+                                <div class="breaking-overlay-desc">Ducimus ipsam possimus adipisci eaque doloribus blanditiis aut recusandae quis nobis delectus harum voluptatibus vitae sapiente aspernatur obcaecati deserunt.</div>
+                            </div>
+                        </div>
+                        <div class="breaking-bottom">
+                            <div class="breaking-bottom-left">
+                                <span class="breaking-category">Adipisci · Eaque</span>
+                                <div class="breaking-bottom-title">Possimus adipisci eaque doloribus blanditiis aut reiciendis totam nemo quos mollitia dignissimos</div>
+                            </div>
+                            <div class="breaking-meta">1 hr ago</div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="slide" onclick="openArticle(4)">
+                        <div class="breaking-img">
+                            <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=900&q=80" alt="Breaking news" onerror="this.style.display='none'">
+                            <div class="breaking-img-icon">⚽</div>
+                            <div class="breaking-tag">⚡ Breaking News</div>
+                            <div class="breaking-overlay">
+                                <div class="breaking-overlay-label">Breaking News</div>
+                                <div class="breaking-overlay-title">Reiciendis totam nemo quos mollitia dignissimos eum ducimus ipsam possimus adipisci</div>
+                                <div class="breaking-overlay-desc">Obcaecati deserunt fugit enim possimus adipisci eaque doloribus blanditiis aut recusandae quis nobis delectus harum voluptatibus vitae sapiente aspernatur.</div>
+                            </div>
+                        </div>
+                        <div class="breaking-bottom">
+                            <div class="breaking-bottom-left">
+                                <span class="breaking-category">Voluptas · Dolor</span>
+                                <div class="breaking-bottom-title">Reiciendis totam nemo quos mollitia dignissimos eum ducimus ipsam possimus adipisci eaque</div>
+                            </div>
+                            <div class="breaking-meta">2 hr ago</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <button class="carousel-btn next" id="nextBtn" aria-label="Next article">&#8594;</button>
+
+        </div>
+
+        
+        <div style="position: absolute; bottom: 70px; left: 50%; transform: translateX(-50%);">
+            <div class="carousel-dots" id="carouselDots">
+                <div class="dot active" onclick="goToSlide(0)"></div>
+                <div class="dot" onclick="goToSlide(1)"></div>
+                <div class="dot" onclick="goToSlide(2)"></div>
+                <div class="dot" onclick="goToSlide(3)"></div>
+                <div class="dot" onclick="goToSlide(4)"></div>
+            </div>
+        </div>
+
+        <div class="scroll-hint">Scroll</div>
+
+    </section>
+
+    
+    <div class="third-section">
+
+        
+        <div class="news-col">
+            <div class="sec-header">
+                <h2>News</h2>
+                <div class="sec-header-line"></div>
+            </div>
+            <div class="news-list">
+
+                <div class="news-item" onclick="openArticle(5)">
+                    <div class="news-item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit rerum laborum necessitatibus</div>
+                    <div class="news-item-body">
+                        <div class="news-item-img">
+                            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=200&q=70" alt="" onerror="this.style.display='none'">
+                            <div class="news-item-img-fallback">🖼</div>
+                        </div>
+                        <div class="news-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus fuga error hic sapiente soluta eveniet expedita earum recusandae quis nobis delectus vitae sapiente aspernatur.</div>
+                    </div>
+                </div>
+
+                <div class="news-item" onclick="openArticle(6)">
+                    <div class="news-item-title">Nesciunt autem totam voluptate beatae iure exercitationem doloremque eaque rerum maiores</div>
+                    <div class="news-item-body">
+                        <div class="news-item-img">
+                            <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=200&q=70" alt="" onerror="this.style.display='none'">
+                            <div class="news-item-img-fallback">🖼</div>
+                        </div>
+                        <div class="news-item-text">Harum voluptatibus vitae sapiente aspernatur obcaecati deserunt fugit enim possimus adipisci eaque doloribus blanditiis aut recusandae nobis delectus.</div>
+                    </div>
+                </div>
+
+                <div class="news-item" onclick="openArticle(7)">
+                    <div class="news-item-title">Aspernatur molestias quae aperiam facere quos mollitia dignissimos eum ducimus ipsam</div>
+                    <div class="news-item-body">
+                        <div class="news-item-img">
+                            <img src="https://images.unsplash.com/photo-1777574236439-1389363e67c5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzN3x8fGVufDB8fHx8fA%3D%3D" alt="" onerror="this.style.display='none'">
+                            <div class="news-item-img-fallback">🖼</div>
+                        </div>
+                        <div class="news-item-text">Earum recusandae quis nobis delectus harum voluptatibus vitae sapiente aspernatur obcaecati deserunt fugit enim possimus adipisci eaque doloribus.</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        
+        <div class="headlines-col">
+            <div class="sec-header">
+                <h2>News Headlines</h2>
+                <div class="sec-header-line"></div>
+            </div>
+            <div class="headlines-list">
+
+                <a class="headline-item" href="article.html" onclick="openArticle(8); return false;">
+                    <div class="headline-item-top">
+                        <div class="headline-img">
+                            <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=260&q=70" alt="" onerror="this.style.display='none'">
+                            <div class="headline-img-fallback">📷</div>
+                        </div>
+                        <div class="headline-content">
+                            <div class="headline-title">Lorem ipsum dolor sit amet consectetur adipisicing elit rerum laborum necessitatibus consequuntur</div>
+                            <div class="headline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus fuga error hic sapiente soluta eveniet expedita earum recusandae quis nobis delectus vitae.</div>
+                            <div class="headline-meta">Lorem · 3 hr ago</div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="headline-item" href="article.html" onclick="openArticle(9); return false;">
+                    <div class="headline-item-top">
+                        <div class="headline-img">
+                            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=260&q=70" alt="" onerror="this.style.display='none'">
+                            <div class="headline-img-fallback">📷</div>
+                        </div>
+                        <div class="headline-content">
+                            <div class="headline-title">Nesciunt autem totam voluptate beatae iure exercitationem doloremque eaque rerum maiores vel</div>
+                            <div class="headline-text">Harum voluptatibus vitae sapiente aspernatur obcaecati deserunt fugit enim possimus adipisci eaque doloribus blanditiis aut recusandae nobis delectus.</div>
+                            <div class="headline-meta">Ipsum · 4 hr ago</div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="headline-item" href="article.html" onclick="openArticle(10); return false;">
+                    <div class="headline-item-top">
+                        <div class="headline-img">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=260&q=70" alt="" onerror="this.style.display='none'">
+                            <div class="headline-img-fallback">📷</div>
+                        </div>
+                        <div class="headline-content">
+                            <div class="headline-title">Aspernatur molestias quae aperiam facere quos mollitia dignissimos eum ducimus ipsam possimus</div>
+                            <div class="headline-text">Earum recusandae quis nobis delectus harum voluptatibus vitae sapiente aspernatur obcaecati deserunt fugit enim possimus adipisci eaque doloribus.</div>
+                            <div class="headline-meta">Dolor · 5 hr ago</div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="headline-item" href="article.html" onclick="openArticle(11); return false;">
+                    <div class="headline-item-top">
+                        <div class="headline-img">
+                            <img src="https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a?w=260&q=70" alt="" onerror="this.style.display='none'">
+                            <div class="headline-img-fallback">📷</div>
+                        </div>
+                        <div class="headline-content">
+                            <div class="headline-title">Possimus adipisci eaque doloribus blanditiis aut reiciendis totam nemo quos mollitia dignissimos</div>
+                            <div class="headline-text">Ducimus ipsam possimus adipisci eaque doloribus blanditiis aut recusandae quis nobis delectus harum voluptatibus vitae sapiente aspernatur obcaecati.</div>
+                            <div class="headline-meta">Amet · 6 hr ago</div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="headline-item" href="article.html" onclick="openArticle(12); return false;">
+                    <div class="headline-item-top">
+                        <div class="headline-img">
+                            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=260&q=70" alt="" onerror="this.style.display='none'">
+                            <div class="headline-img-fallback">📷</div>
+                        </div>
+                        <div class="headline-content">
+                            <div class="headline-title">Reiciendis totam nemo quos mollitia dignissimos eum ducimus ipsam possimus adipisci eaque</div>
+                            <div class="headline-text">Obcaecati deserunt fugit enim possimus adipisci eaque doloribus blanditiis aut recusandae quis nobis delectus harum voluptatibus vitae sapiente.</div>
+                            <div class="headline-meta">Consectetur · 7 hr ago</div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="headline-item" href="article.html" onclick="openArticle(13); return false;">
+                    <div class="headline-item-top">
+                        <div class="headline-img">
+                            <img src="https://images.unsplash.com/photo-1474552226712-ac0f0961a954?w=260&q=70" alt="" onerror="this.style.display='none'">
+                            <div class="headline-img-fallback">📷</div>
+                        </div>
+                        <div class="headline-content">
+                            <div class="headline-title">Voluptatibus vitae sapiente aspernatur obcaecati deserunt fugit enim possimus adipisci eaque</div>
+                            <div class="headline-text">Blanditiis aut recusandae quis nobis delectus harum voluptatibus vitae sapiente aspernatur obcaecati deserunt fugit enim possimus adipisci eaque doloribus.</div>
+                            <div class="headline-meta">Adipisci · 8 hr ago</div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+
+    
+    <div class="footer">
+        <div class="box">
+            <div class="left">
+                <div class="categories">
+                    <p>Categories</p>
+                    <div><p>Sports</p></div>
+                    <div><p>Business</p></div>
+                    <div><p>Technology</p></div>
+                    <div><p>Cooking</p></div>
+                    <div><p>Health</p></div>
+                    <div><p>Entertainment</p></div>
+                    <div><p>Travel</p></div>
+                    <div><p>Education</p></div>
+                </div>
+                <div class="contractUs">
+                    <div class="contact">
+                        <p>Contact Us</p>
+                        <div>Phone No. - <span>123-456-7890</span></div>
+                        <div>Email - <span>xyz@gmail.com</span></div>
+                        <div>Address - <span>14 Ta Quang Buu, DaNang, VN</span></div>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="newletter">
+                    <p>Subscribe to our newsletter</p>
+                    <div class="email">
+                        <input type="email" placeholder="Enter your email">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyrights">Copyright &copy; 2026 WorldNews. All rights reserved.</div>
+    </div>
+
+    <script src="js/News.js"></script>
+</body>
+</html>
